@@ -18,8 +18,8 @@
     <%= f.input :price %>
   </div>
 
-  <% if @product.image.presetn? %>
-    <span>目前商品图</spam>
+  <% if @product.image.present? %>
+    <span>目前商品图</span>
     <%= image_tag(@product.image.thumb.url)%>
   <%end%>
 
