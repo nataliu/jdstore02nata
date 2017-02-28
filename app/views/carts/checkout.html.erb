@@ -19,6 +19,7 @@
           <td> <%= cart_item.product.price %> </td>
           <td> <%= cart_item.quantity %> </td>
         </tr>
+        <% end %>
       </tbody>
     </table>
 
@@ -43,7 +44,7 @@
 
       <legend> 收货人</legend>
       <div class="form-group col-lg-6">
-       <%= f.input :shipping_name  %>
+        <%= f.input :shipping_name  %>
       </div>
       <div class="form-group col-lg-6">
         <%= f.input :shipping_address  %>
